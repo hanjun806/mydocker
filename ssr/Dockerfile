@@ -3,7 +3,7 @@
 
 FROM debian:stretch
 
-LABEL maintainer="Wang Jie <tiantian.china.2@gmail.com>"
+LABEL maintainer="xxxx"
 
 # prepare
 RUN apt-get update \
