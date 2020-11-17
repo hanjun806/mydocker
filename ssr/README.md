@@ -47,7 +47,7 @@
 
 - 登录你的 vps，安装 docker，执行 `docker login` 登录。
 - 运行 `docker pull hanjun806/ssr:1.0` 命令把刚刚你创建的镜像 pull 下来。
-- 再运行镜像：`docker run -itd --name ssr -p 9000:9000 -p 9001:9001 -p 9002:9002 hanjun806/ssr:1.0`
+- 再运行镜像：`docker run -itd --name ssr -p 9001:9001 -p 9002:9002 hanjun806/ssr:1.0`
 - 容器（容器的名字为 `ssr`）启动之后，`ssr server` 会自动跑起来。
 - 根据你 vps 的系统，把 `docker run ssr` 作为开机自启。
 
