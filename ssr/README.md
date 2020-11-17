@@ -50,3 +50,10 @@
 - 再运行镜像：`docker run -itd --name ssr -p 9000:9000 -p 9001:9001 -p 9002:9002 hanjun806/ssr:0.1`
 - 容器（容器的名字为 `ssr`）启动之后，`ssr server` 会自动跑起来。
 - 根据你 vps 的系统，把 `docker run ssr` 作为开机自启。
+
+## 客户端配置
+
+- ip，端口，密码等用配置的
+- 加密：chacha20
+- 协议：auth_chain_a
+- 混淆：tls1.2_ticket_auth
