@@ -10,9 +10,13 @@
  - 运行
 
  ```
- 
 docker run --name my-nginx \
 -v "/mnt/data/nginx/tcp.d:/opt/nginx/stream.conf.d" \
 -p 3389:3389 -p 3309:3309 -d  hanjun806/nginx-stream:1.0
 
  ```
+- 重载
+
+ ```bash
+docker exec -it my-nginx bash -c 'bash /opt/nginx/sbin/zero_downtime_reload.sh'
+```
